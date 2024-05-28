@@ -1,0 +1,21 @@
+name: "ddnet_jhmdb"
+platform: "pytorch_libtorch"
+input [
+  {
+    name: "input__0"
+    data_type: TYPE_FP32
+    dims: [ 512, 32, 105 ]
+  },
+  {
+    name: "input__1"
+    data_type: TYPE_FP32
+    dims: [ 512, 32, 15, 2 ]
+  }
+]
+output [
+  {
+    name: "output__0"
+    data_type: TYPE_FP32
+    dims: [512, 21]
+  }
+]
